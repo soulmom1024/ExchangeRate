@@ -1,0 +1,270 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="894.4,4664" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.Word.Activities</x:String>
+      <x:String>UiPath.Presentations.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="688,4579.2" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="sd:DataTable" Name="Extract_Table_Data에서_데이터_테이블" />
+      <Variable x:TypeArguments="x:Object" Name="Input_Dialog에서_결과" />
+      <Variable x:TypeArguments="x:String" Name="Output_Data_Table에서_텍스트" />
+      <Variable x:TypeArguments="x:Int32" Name="Add_New_Slide에서_새_슬라이드_번호를_다음으로_저장" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard sap2010:Annotation.AnnotationText="네이버를 통해 환율을 검색한다." AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: NAVER" sap:VirtualizedContainerService.HintSize="625.6,4467.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="IfNotOpen" ScopeGuid="39913014-2004-4f6d-9b6f-bf00a401c527" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="592,4179.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" sap2010:Annotation.AnnotationText="환율을 조회하는 페이지로 이동합니다." ClickBeforeMode="Single" DisplayName="Type Into 'NAVER'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="529.6,249.6" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="39913014-2004-4f6d-9b6f-bf00a401c527" Text="[string.Format(&quot;환율{0}&quot;, &quot;[k(enter)]&quot;.ToString)]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.naver.com/" CvTextArgument="2401S e2oH TH" CvType="Text" DesignTimeRectangle="718, 280, 648, 78" DesignTimeScaleFactor="1.350000023841858" ElementType="InputBox" FriendlyName="'INPUT query'" FullSelectorArgument="&lt;webctrl id='query' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='query' tag='INPUT' type='search' class='search_input' aaname='검색어를 입력해 주세요.' /&gt;" Guid="0e9adc12-fdea-41b7-ad31-7131cee5b881" ImageBase64="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" InformativeScreenshot="faec536d0150dde76ec287db85f2d8ae.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='NAVER' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="603, 278, 955, 85" CvTextArea="638, 300, 382, 39" CvTextArgument="N 2401S e2oH TH" CvType="InputBox" DesignTimeRectangle="606, 280, 92, 78" ElementType="Text" FriendlyName="'NAVER'" FullSelectorArgument="&lt;webctrl aaname='NAVER' parentid='special-input-logo' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='NAVER' parentid='special-input-logo' tag='A' type='' class='link_naver type_motion_n is_fadein' check:innerText='NAVER' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAABSCAYAAACrKtGeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUxSURBVHhe7Z1baFxFGIAFbyDYB68UBUF9EQSxD76IiAiigg+KvrSVWqlVilqLRW0RbbzXa8Vqqy+lodqokVZbCVqltbXNZXM1STdJI5tL0ybdTTa3XZM08Xf/wxxddufszpwzM2dO/b/wE+Y/e07C+XZnz8w5M3MeEKFCAkLGCgH9M0n4fqwR3jy5Bx47sQ3u6nwdbmp5Hq6KrYZL6lfABbXL4PzapedkhCJgfD4DXyWPwuO92+HG5rVwTeMaeCD+HmwcqIIdI4fg4HgndGVPQXJuEmYW5uDv3M+5ilEBVclj8GDXB3BR3XLn97bhAxDPDrGt/0+0CxieG4dNg9VwbdMauC/+DlQmD0NmYZZtJbQJSJ6dhBf6v4QLc/X3M4kd0J4ZYFuIfLQIeHdoHyyqXwnr+iphcHaUZQkeSgUcnOiE29pfhoe7P4IOescLoUzAKwPfwOLGp2BX8gjLECIEFoBVzL3xt+GR7i3OFy4hRyABv00ch+uans41oPayDCGLbwHfjtY5LdSvU7UsQ/jBl4CdZw7DFbEn4FDuE0AEQ1rAruTvcHXsSWiY6mUZIghSAvaNNTnX97VTPSxDBEVYQMt0AhY1rISadCvLECoQEpBdmIVb2l6EL0Z+ZRlCFUICVvR+BusSlaxEqKSsgM+Hf4HbO15lJUI1JQX0zSTh0tyXbmzqT5YhVFNSwLITW6Fi8DtWInTgKeDHdAvc3LqelQhdeArAer8qdYyVCF1wBeCJv7OjgpUInXAF4Lt/z2iMlQidFAk4MN4OS9o2sFJ4VAxWc5+jKYwbmtdC+myG7VUe7EDkHYcX+D/opkjA0p5P4NPTP7NSeIgKwMDni0SxWgA+CHVx3aMwOZ9lmfCQEYCxV7DKtFrA9lyrd3nPVlYKF1kBl8dWCVVFVgu4P74ZqlP1rBQusgIwHur+kO3tTdgCpjJZGE6NwXT2L6f8r4Dp+RnnFiP2fNqAHwEYW07VsCPwsVbA/nQz3HP8LVYKH78CsCpKzJxhRynGWgEb+nfDaxb1+/gVgLHkD+/LaGsF3N35BvyUbmOl8AkiAMPr5Fkr4MrYahiZm2Cl8AkqAKN1uo8d7T+sFHBydtQZJGETKgRgVVR4aWqlgCOTXXBHxyYnYQsqBGAU3kq1UsDu1FGnC8ImVAnAwJPuYqWAj0/XwHOJnU7CFlQKyO+ws1IA3nbU8ceCoFIAhttKtlIAtgE2D/3gJGxBRsCtbS9x84WBHXZWCsCxXO8P7XcStiAjAC83L2tYxd2WH9hKRgm8bbygTwDnpPACwT4g3rbCQAm8PC+MCYj6d4ALjrDnbfcbxgRE/SrIBTvhRKoi0TAmIOrtgHxk6vhyYUxA1FvCheA0CLzXyYYxAVHvCyoEG10qqiJjApAo94bykLne9wqjAqJ8P8AL7IjjvV40jAqI8h0xL7Aqur75We4+ImFUQJTvCZcCW8m8fUTCqIAoPxVRDplj5YdRAUhUnwsSQbTDLj+MC4jqk3EiiHbY5YdxAVF9NlQU0Q47N4wLQKL4dLQMMh12OgQUUiQgauMDMGSQ6bALRQBCI2TMwRVAY8TMwRWA0ChJM3gKoHHCZvAUgNBIef2UFEBzReinpACEZkvRS1kBCM0XpA8hATRjlj6EBCA0Z5wehAUgNGuieqQEIDRvqFqkBSA0c646fAlAaO5oNfgWgNDs6cEJJACh9QOCEViAC62g4Q9lAhBaQ0YepQJcaBUlcbQIQGgdMTG0CXChlfRKo11APrSWZDFGBbjQaqouAP8AuXbuWPhCRwcAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <ui:InputDialog Options="{x:Null}" sap2010:Annotation.AnnotationText="&quot;입력 대화 상자&quot;를 사용하면 자동화가 실행되는 동안 무엇을 입력해야 하는지 알려주는 유용한 메시지와 함께 입력을 요청할 수 있습니다.&#xA;&#xA;결과는 텍스트 값을 저장할 수 있는 모든 위치에 저장할 수 있습니다. " DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="529.6,403.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="은행을 선택하세요." OptionsString="하나은행;신한은행" Title="은행">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:Object">[Input_Dialog에서_결과]</OutArgument>
+              </ui:InputDialog.Result>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:InputDialog>
+            <ui:IfElseIf sap2010:Annotation.AnnotationText="조건에 따라 처리할 수 있도록 구성합니다. " DisplayName="Else If" sap:VirtualizedContainerService.HintSize="529.6,1152.8" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+              <ui:IfElseIf.ConditionBlocks>
+                <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                  <ui:IfElseIfBlock BlockType="If" Condition="[UiPathObjectExtensions.AsText(Input_Dialog에서_결과) = string.Format(&quot;하나은행&quot;)]">
+                    <ui:IfElseIfBlock.Then>
+                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="449.6,400" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="하나은행" />
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '하나은행'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="39913014-2004-4f6d-9b6f-bf00a401c527" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://search.naver.com/search.naver?where=nexearch&amp;sm=top_hty&amp;fbm=0&amp;ie=utf8&amp;query=%ED%99%98%EC%9C%A8" CvTextArgument="81LIRT" CvType="Text" DesignTimeRectangle="836, 560, 78, 24" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'하나은행'" FullSelectorArgument="&lt;webctrl class='radio_text' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='radio_text' tag='SPAN' type='' aaname='하나은행' check:innerText='하나은행' /&gt;" Guid="1d775d44-212d-4601-8c7f-cbe3783f2cbc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAcCAYAAADyfuiHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKESURBVGhD7Zfva9pAGMf3/785JOMoIQWlSl5EMAwmlhnoRkHwhdBso+tacKBtaF8EhQw7Wvjuya/lh1eNmtRJ78XnhffcXS6fey7P+e7p6RmS3ZEiS0KKLAkpsiSkyJKQIktitchbCxpjMC4EsQAbBsU1yxHENufOOgZjBmxBLM/CsdE3m1C5QmPYPxSuomlasJ1H4TghFwaNPUb/Nh9z0NdoXs3Cnf97hY9qRb64QDFFRU7OGoE0zRzg2pnD+xPHHjFzbjD42ACneP1smhn3Im9SZLQm7dNqSbOhTnOp6I2XY+FzkiwW4697K5GhFPGkeWI5exBZdM61SVCEsjJyLYeZkTELZ4ROnUOpRQmicNTpczGZxX12FXn/Hf12I3lATYF60sVo6QN+wN/Iyy54jaNpXeHBC9u8hyv0WxyMd/AtaItE+g5SFBM5IeskUDVHtDOROG8KmxbHGKdJ5qn++xHps2vVttvUXx/Cy8e8IXSaRx/+pt9bZ+Qv9FRajDHCLNMeMu6pYO/pRaMdrEZkImWTsZtSrcgVHQMoW1Wm4MNl3BaKzLx82076V5iROxMcbTr+pwWOdjUiGTpf47ZXOtrBPLkN24L8e/nFpnuiZotN+xzXuxebAke7pmNY6dF+pYwsxNYiiQMpNv8byyJ9Sr3+RHOkUDgHP0pQWudwqX8hkRtuTlHc8QC9Nt0CjrK3gGC9tMa6forBjYuFYKyPWGRh1ojckP2InMM2qcDUVBiWjYmbvpf60N3UneLHl05wUnlrEB7zHFLk/efguxdedwTxND+p0lPfpNgmSJFSpCC2FW/6aGeLwUriq8sa3PEo/Mu5n2IjiZEiS0KKLAkpshSe8Rf1ksmm8lJhqgAAAABJRU5ErkJggg==" InformativeScreenshot="352a9b2ccd363ab6edfef6f1ab53aed2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='환율 : 네이버 통합검색' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ui:IfElseIfBlock.Then>
+                  </ui:IfElseIfBlock>
+                  <ui:IfElseIfBlock BlockType="ElseIf" Condition="[UiPathObjectExtensions.AsText(Input_Dialog에서_결과) = string.Format(&quot;신한은행&quot;)]">
+                    <ui:IfElseIfBlock.Then>
+                      <Sequence DisplayName="본문" sap:VirtualizedContainerService.HintSize="449.6,400" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="387.2,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="신한은행" />
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '신한은행'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="39913014-2004-4f6d-9b6f-bf00a401c527" Version="V3">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="https://search.naver.com/search.naver?where=nexearch&amp;sm=top_hty&amp;fbm=0&amp;ie=utf8&amp;query=%ED%99%98%EC%9C%A8" CvTextArgument="1eee" CvType="Text" DesignTimeRectangle="963, 560, 78, 24" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'신한은행'" FullSelectorArgument="&lt;webctrl aaname='신한은행' class='radio_text' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='신한은행' class='radio_text' tag='SPAN' type='' check:innerText='신한은행' /&gt;" Guid="a36356e4-f1ad-417a-8dd5-8face9846beb" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAcCAYAAADyfuiHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMeSURBVGhD7ZexSyNBFIfvj9luIUUgxYHYmTQuHFzA4sTCYLHVHRyiNnpNtjJVsEkj24UguJWFxOLQIpDAgalWEBKEBA4MCCsEFH73JtnoZHezmb2dy6XY4oM4b2fn5fPNm8mHl5dXJMQnESmJRKQkEpGSSERKIhEpCQki+6huK1C2q+gFxjkaBhRFQbEREBvRQpHihVo/IOZhOIB9aeJQ15DN0Po0b0QmB00/gnlp43EYMC8Q9zsYLX/Mk3PTCP6uc0XOmvjOfxD51MLxugp1fR9mo4PHJy7mDNBpVFHcYPESmnxsJsss8qGKAqsQIQqoPrB5YiKbhgpl1cB1mKShDfOzAvXHDRxffLxOcC4cTOxSVuRcRESGVI+H+bkLIEdkH+c7NPFLFZ3AOGO+SOf+CpXvm++9LPWR+piB8/bA8+yiKtKF+uxt7Qiba2m3CtPIblF/bXHrSxHpXOFQoV6T0nH+OyA+IlykQ4lklRz2am30HHfc6cO2DGipNHSLl7bIHjnAxW4a6kYJ1/fP47HhMzo/S8inVBTO3BxckVNEFWmf5qF+tVA/ySF70g58JlxkG+VVBflT2zM+5tHSqTqPcD0RLCqSEffUHvVwDeadP2afalA+mbDZ37ErsksLZegQ6NJnhypgLUcvc/9zU4SIdA+cSRI+RklODhqG/xCYOTcuCxFJW6foFceL5Z+NUZG9WoEq0kDzrXIiVGRs3K29bqAusLWji7y3sEfNVz/rTI8Tzq8y8pk8yi3+kIjTI2n8gpc2S6S7BsVi4c2RHTaUhz512HxD5YZb/69Edi166SbK/Iu8MNFb+7joTqo1XCRD9qm9UGJt7UjMFynOEooUJESkK2juxVdEpKggkedE84rIsI9mrTK6BWgrdE+lPCaoKzRGW/641kLn7YYxzZKJFOEfiGQtjdpOVq+gftefvpcy6G7au7uBeaDRnTqPStt/e5EgUoTlFtksUQVOrjuhPKO+S2vvWFF6ZCLSTyIynIVsbRIgyuxfIWORQXOC4X/teJGZFwcdNrfW+Cen5MMmIQqJSEkkIiWRiJTCK/4ATsJ+vKFtJjkAAAAASUVORK5CYII=" InformativeScreenshot="511acdf98b7fe2750939fa8a4844304b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='환율 : 네이버 통합검색' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                          </uix:NClick.Target>
+                        </uix:NClick>
+                      </Sequence>
+                    </ui:IfElseIfBlock.Then>
+                  </ui:IfElseIfBlock>
+                </sc:BindingList>
+              </ui:IfElseIf.ConditionBlocks>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:IfElseIf>
+            <uix:NExtractData sap2010:Annotation.AnnotationText="테이블 데이터 추출은 테이블 추출 마법사를 사용하여 지정된 모든 정보를 추출합니다.&#xA;&#xA;추출된 데이터는 Excel에 직접 쓰거나 나중에 사용할 수 있도록 저장할 수 있습니다." AppendResults="False" ContinueOnError="True" DataTable="[Extract_Table_Data에서_데이터_테이블]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='통화명' ReferenceName='Column0'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='매매기준율' ReferenceName='Column1'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='전일대비1' ReferenceName='Column3'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='전일대비2' ReferenceName='Column4'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' Name='등락률' ReferenceName='Column5'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='tr' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='th' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='span' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='2' /&gt;&lt;webctrl tag='em' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column5' attr='fulltext'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' idx='3' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="529.6,249.6" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="39913014-2004-4f6d-9b6f-bf00a401c527" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="306, 1162, 884, 404" DesignTimeScaleFactor="1.5" FriendlyName="'미국 USD'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="ad692260-57c6-4d90-a86e-2d83b6d36d96" InformativeScreenshot="75a7d2b683c1af1d3c4c46484fc6a4ba.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='환율 : 네이버 통합검색' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NExtractData>
+            <ui:OutputDataTable DataTable="[Extract_Table_Data에서_데이터_테이블]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="529.6,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[Output_Data_Table에서_텍스트]" />
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="529.6,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[Output_Data_Table에서_텍스트]" />
+            <ui:PowerPointApplicationScope Password="{x:Null}" sap2010:Annotation.AnnotationText="파워포인트 파일에 스크래핑한 테이블을 추가한다." DisplayName="Use PowerPoint Presentation" sap:VirtualizedContainerService.HintSize="529.6,1597.6" sap2010:WorkflowViewState.IdRef="PowerPointApplicationScope_1" PresentationPath="powerpointtemplate.pptx" TemplatePath="powerpointtemplate.pptx">
+              <ui:PowerPointApplicationScope.Body>
+                <ActivityAction x:TypeArguments="ui:IPresentationQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ui:IPresentationQuickHandle" Name="PowerPoint" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="496,1316" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:SavePresentationFileAs DisplayName="Save PowerPoint File As" FilePath="환율.pptx" sap:VirtualizedContainerService.HintSize="433.6,218.4" sap2010:WorkflowViewState.IdRef="SavePresentationFileAs_2" Presentation="[PowerPoint]" />
+                    <ui:InsertSlide InsertPosition="{x:Null}" DisplayName="Add New Slide" sap:VirtualizedContainerService.HintSize="433.6,290.4" sap2010:WorkflowViewState.IdRef="InsertSlide_2" InsertType="End" InsertedAtPosition="[Add_New_Slide에서_새_슬라이드_번호를_다음으로_저장]" LayoutName="Timeline" Presentation="[PowerPoint]" SlideMasterName="Alternative Presentation Layouts" />
+                    <ui:ReplaceShapeWithDataTable AppendMode="CreateNewTable" DisplayName="Add Data Table to Slide" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="433.6,309.6" sap2010:WorkflowViewState.IdRef="ReplaceShapeWithDataTable_1" Presentation="[PowerPoint]" ShapeName="Table Placeholder 1" SlideIndex="[Add_New_Slide에서_새_슬라이드_번호를_다음으로_저장]" StartColumn="1" StartRow="0" TableToInsert="[Extract_Table_Data에서_데이터_테이블]" />
+                    <ui:InsertTextInPresentation ClearExistingText="False" DisplayName="Add Text to Slide" sap:VirtualizedContainerService.HintSize="433.6,262.4" sap2010:WorkflowViewState.IdRef="InsertTextInPresentation_2" Presentation="[PowerPoint]" ShapeName="제목 2" SlideIndex="[Add_New_Slide에서_새_슬라이드_번호를_다음으로_저장]" Text="[UiPathObjectExtensions.AsText(Input_Dialog에서_결과)]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:PowerPointApplicationScope.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:PowerPointApplicationScope>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="3363, 7, 2191, 2045" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIfSURBVFhHxZZPT1NBFMVvcjbGhZv3KVz6aVSgtCoFNm5c+T1IdMnGL2AaIyFGhAoUaANiqUVflRhjQwzGhCY2RrzeqxM603c72znJLzmdN+d03r92CD8WagInokb4Ps8pIXwTkxDCaZVTQujPcUoIX+5xSgifxSSEcHKXU0L4eIej5CXO8mrAlbzM6FVGc3plznrzhXmaDboMCLmYGN1pHtfT8ybjeGY050PZHQml2aDLgPBeziRGZ8rVhbrfX5YvkDPUOcezbjSUZgt9YxC6YmK07QUM//ziG/lDxrvZf1jSrNnpQejI/Yzx9rarK6o7/MrXjuRStktuJJRmzU4PQlvOIMabW67O1vLZGuPQvkqaNTs9CIdiYuzHF6Ca+bTkXCjNmp0ehAN5kGK0brq6yTq/+OlcKM2anR6EfTEx9uwFDC6Gzk2WZs1OD0JLLkWMHfsWVHqPnJsszZqdHoSmmBgNewFZa46X+ivuky3Nmp0ehF15HWJs2a9h1lzgqztlPhicuJGiNGt2ehAaYmJsTljAnuzptkt8vfWAB7/t50GzZqcHYUt+kWLU7Xc8ayz+P/66xJXuYzcaSrOFvjEIm2JibEQWcDlnmp+c1t2RkTQbdBkQ6vJTGmNdXpdX8q8WIP+EG3IJL+dJmY6Nz9Os32VAWBeTEMKa7EwSQngpe7OEEF6ISQhhVfbnCSGsiEkI4bnsXhNCeFatCZyGau0vnrb5PVYj75UAAAAASUVORK5CYII=" InformativeScreenshot="a13d70dc7da422083b56c17444d9883b.jpg" Selector="&lt;html app='chrome.exe' title='NAVER' /&gt;" Title="NAVER" Url="https://www.naver.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
