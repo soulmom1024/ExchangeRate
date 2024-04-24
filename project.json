@@ -1,5 +1,6 @@
 {
   "name": "환율조회",
+  "projectId": "a398c050-a51b-4830-8f03-df2a3ba7004a",
   "description": "환율조회 템플릿입니다.",
   "main": "Main.xaml",
   "dependencies": {
@@ -46,7 +47,8 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true
+    "modernBehavior": true,
+    "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "isTemplate": false,
